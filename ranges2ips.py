@@ -31,8 +31,8 @@ def main():
                 
                 # format: 192.168.1.1-192.168.1.3
                 if '.' in arr[1]:
-                    res = ip_range(arr[0],arr[1])
-                    print(res, len(res))
+                    for ip in ip_range(arr[0],arr[1]):
+                        print(ip)
 
                 # format: 192.168.1.1-3
                 else: 
